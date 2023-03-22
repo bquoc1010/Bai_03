@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registation form</title>
+    <style>
+        table, tr, td {
+            border: 1px solid;
+        }
+
+         td {
+            padding: 10px;
+        }
+    </style> 
+</head>
+<body>
+    <h1><strong>Đăng ký thành viên</strong></h1>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" autocomplete="on" method="post">
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    Họ tên:
+                </td>
+                <td>
+                
+                    <input type="text" placeholder="Vui lòng nhập họ tên" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mật khẩu:
+                </td>
+                <td>
+                    <input type="password" placeholder="Vui lòng nhập mật khẩu" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Giới tính:
+                </td>
+                <td>
+                    <input type="radio" id="nam" name="gioitinh" value="nam">
+                    <label for="nam">Nam</label>
+                  
+                    <input type="radio" id="nu" name="gioitinh"value="nu">
+                    <label for="nu">Nữ</label>
+                    
+                    <input type="radio" id="khac" name="gioitinh" value="khac">
+                    <label for="khac">Không công bố</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sở thích:
+                </td>
+                <td>
+                    <input type="checkbox" id="xemphim" name="sothich" value="xemphim">
+                    <label for="xemphim">Xem phim</label>
+                    <br>
+                    <input type="checkbox" id="docsach" name="sothich" value="docsach">
+                    <label for="docsach">Đọc sách</label>
+                    <br>
+                    
+                    <input type="checkbox" id="nghenhac" name="sothich" value="nghenhac">
+                    <label for="nghenhac">Nghe nhạc</label>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tuổi:
+                </td>
+                <td>
+                    <input type="text" name="age">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Từ khóa tím kiếm:
+                </td>
+                <td>
+                    <input type="text" name="key_word">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Giới thiệu bản thân:
+                </td>
+                <td>
+                    <textarea name="introduce_myself" id="introduce_myself" cols="50" rows="10" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email có thể liên hệ:
+                </td>
+                <td>
+                    <input type="email" name="nhap_email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Địa chỉ web của bạn:
+                </td>
+                <td>
+                    <input type="url" name="website">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Số điện thoại:
+                </td>
+                <td>
+                    <input type="text" name="phone_number" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                 Các loại Chọn
+                 <br>
+                 Thời gian
+                    
+                </td>
+                <td>
+                    <p><strong>Ngày tháng</strong></p><br>
+                    <label for="date">Chọn ngày:</label>
+                    <input type="date" id="date" >
+                    <br>
+                    <label for="month">Chọn tháng:</label>
+                    <input type="month" id="month">
+                    <br>
+                    <label for="week">Chọn tuần:</label>
+                    <input type="week" id="week">
+                    <br>
+                    <p><strong>Giờ</strong></p><br>
+                    <label for="time">Chọn giờ:</label>
+                    <input type="time" id="time">
+                    <br>
+                    <label for="datetime">Chọn cả Ngày-Giờ:</label>
+                    <input type="datetime-local" id="datetime">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Màu yêu thích:
+                </td>
+                <td>
+                    <input type="color" name="fav_color">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                Bạn đang sinh sống  
+                <br>
+                ở TP/Tỉnh nào?
+                    
+                </td>
+                <td>
+                    <input type="text" name="city">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="submit" value="Đăng ký">
+</form>
+</body>
+</html>
